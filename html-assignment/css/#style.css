@@ -19,5 +19,6 @@ header {
 
 h1,h2,h3,h4 {
     font-family: 'Times New Roman', Times, serif;
-    border-left: 3px; dotted 
+    border-left: 3px indianred;
+    padding: 20px;
 }
