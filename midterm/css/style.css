@@ -1,4 +1,4 @@
-
+body {
     background-color:grey;
     color: 808080;
     font-family: 'Courier New', Courier, Tahoma, Geneva, Verdana, sans-serif;
@@ -11,9 +11,6 @@ header {
     margin-left:auto;
     margin-right: auto;
     margin-bottom: auto;
-
-
-
 }
 
 
@@ -21,4 +18,8 @@ h1,h2,h3,h4 {
     font-family: 'Times New Roman', Times, serif;
     border-left: 3px indianred;
     padding: 20px;
+}
+
+footer {
+    text-align: right;
 }
