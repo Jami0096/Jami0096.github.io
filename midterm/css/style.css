@@ -1,25 +1,91 @@
 body {
-    background-color:grey;
-    color: 808080;
-    font-family: 'Courier New', Courier, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #bbddcc;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 header {
-    width: 960px;
-    background:indianred;
-    padding: 20px;
+    width: 1024px;
+    height: 341px;
     margin-left:auto;
     margin-right: auto;
-    margin-bottom: auto;
+    position: relative;
+}
+
+.headertext {
+    color: white;
+    font-size: 64px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 29px;
 }
 
 
-h1,h2,h3,h4 {
-    font-family: 'Times New Roman', Times, serif;
-    border-left: 3px indianred;
-    padding: 20px;
-}
 
 footer {
     text-align: right;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+article {
+    padding-right: 30px;
+}
+
+.contentdiv{
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #ddeeee;
+    width:1024px;    
+    margin-left:auto;
+    margin-right: auto;
+
+    position: relative;
+
+}
+
+.contentimage {
+    width: 250px;
+    height: 256px;
+    float: left;
+
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+form {
+    border-width: 1px;
+    border-style: solid;
+    padding:20px;
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+a:link {
+    color: black;
+    text-transform: capitalize;
+
+    text-decoration: none;
 }
