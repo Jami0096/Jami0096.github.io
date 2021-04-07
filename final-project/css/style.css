@@ -1,0 +1,77 @@
+body {
+    background-color: #fff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+}
+
+.content {
+    background-color: #222;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+}
+
+.welcome {
+    display: block;
+    position: relative;
+    background-image: url("./images/main-banner.jpg");
+    
+}
+
+
+.welcomeinner {
+    display: inline-block;
+    background-color: blueviolet;
+    position: absolute; 
+    top: 300px; /* This can be fixed later - vertical alignment of block */
+    left: 0;
+    z-index: 1;
+}
+
+
+.about {
+    display: block;
+    position: relative;
+   background-color: blanchedalmond;
+    
+}
+
+.services {
+    display: block;
+    position: relative;
+   background-color: #fff;
+    
+}
+
+.digitalservices {
+    display: block;
+    position: relative;
+   background-color: blanchedalmond;
+    
+}
+
+.marketingservices {
+    display: block;
+    position: relative;
+   background-color: blanchedalmond;
+}
+/* !!!!!!  TODO: video/ web / print */
+
+
+.ourvision {
+    display: block;
+    position: relative;
+    background-image: url("./images/main-banner.jpg");
+    
+}
+
+
+.ourvisioninner {
+    display: inline-block;
+    background-color: blueviolet;
+    position: absolute; 
+    top: 0; /* This can be fixed later - vertical alignment of block */
+    left: 0;
+    z-index: 1;
+}
