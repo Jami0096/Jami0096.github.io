@@ -1,18 +1,61 @@
 body {
     background-color: #fff;
     color: black;
+    font-family: "Open Sans";
+    width: 704px;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.navigation {
+    background-color: #222222;
+    margin: 10px;
+    color: #ce892a;
     font-family: Arial, Helvetica, sans-serif;
-    width: 800px;
+    width: 704px;
+    display: flex;
+}
+
+.navigation a{
+    color: #ce892a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.navlinks{
+    display: block;
+    block-size: auto;
+    width: 100%;
 }
 
 .content {
     background-color: #222;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    width: 800px;
+    width: 704px;
+}
+
+.contenttext {
+    font-size: 16px;
 }
 
 .welcome {
+    width: 704px;
+    height: 605px;
     display: block;
     position: relative;
     background-image: url("./images/main-banner.jpg");
@@ -21,21 +64,36 @@ body {
 
 
 .welcomeinner {
+    height: 460px;
+    width: 100%;
+    opacity: 0.7;
     display: inline-block;
-    background-color: blueviolet;
+    background-color: black;
     position: absolute; 
-    top: 300px; /* This can be fixed later - vertical alignment of block */
+    top: 70px; /* This can be fixed later - vertical alignment of block */
     left: 0;
     z-index: 1;
+
 }
+
+.welcomebutton {
+    width: 260px;
+    height: 95px;
+    background-color: #ce892a;
+}
+
+
 
 
 .about {
     display: block;
     position: relative;
-   background-color: blanchedalmond;
-    
+   background-color: #ffe6ac;
+   padding-left: 10px;
+   padding-top: 10px;
 }
+
+
 
 .services {
     display: block;
@@ -45,10 +103,24 @@ body {
 }
 
 .digitalservices {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     display: block;
     position: relative;
-   background-color: blanchedalmond;
     
+}
+
+.digitalplansbutton {
+    width: 260px;
+    height: 95px;
+    background-color: #000;
+    color: #fff;
+}
+
+.servicesinner {
+    display: block;
+    background-color:  #ce892a;
 }
 
 .marketingservices {
@@ -80,18 +152,38 @@ body {
 
 
 .ourvision {
+    height: 280px;
     display: block;
     position: relative;
-    background-image: url("./images/main-banner.jpg");
     
 }
 
-
 .ourvisioninner {
     display: inline-block;
-    background-color: blueviolet;
     position: absolute; 
     top: 0; /* This can be fixed later - vertical alignment of block */
     left: 0;
     z-index: 1;
+    height: 100%;
+    width: 100%;
+    color:#fff;
+}
+
+.ourvisionbutton {
+    width: 260px;
+    height: 95px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 20px solid #555;
+	border-bottom: 15px solid transparent;
 }

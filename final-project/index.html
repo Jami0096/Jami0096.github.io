@@ -4,105 +4,114 @@
     <!-- Document information -->
     <meta charset="UTF-8">
     <title>Three Star Media</title>
-
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body> <!-- Navigation: Orange: ce892a / Bkg 222222  -->
         <header class="header">
-            <img src="./images/logo.png"  alt="header image">
-            <!-- Document Content -->
-            <table>
-                <tr>
-                <td class="navlinks"><a href="#welcome">Home</a></td>
-                <td class="navlinks"><a href="#about">About Us</a></td>
-                <td class="navlinks"><a href="#services">Services</a></td>
-                <td class="navlinks"><a href="#team">Team</a></td>
-                <td class="navlinks"><a href="#contact">Contact</a></td>
-                <td><input type="text" placeholder="Search.."></td>
-                </tr>
-            </table>
+            <div class="navigation">
+                <div class="navlinks"><img src="./images/logo.png"  alt="header image"> </div>
+                <div class="navlinks"><a href="#welcome">Home</a></div><br>
+                <div class="navlinks"><a href="#about">About Us</a></div>
+                <div class="navlinks"><a href="#services">Services</a></div>
+                <div class="navlinks"><a href="#team">Team</a></div>
+                <div class="navlinks"><a href="#contact">Contact</a></div>
+                <div><input type="text" placeholder="Search.."></div>
+
+            </div>
         </header>
 
         <div class="welcome"> <a id="welcome"></a>
 
-            <img src="images/main-banner.jpg" width="800" height="700"><!-- temporary image size-->
+            <img src="images/main-banner.jpg" width="704" height="605"><!-- temporary image size-->
             
             <div class="welcomeinner">
                 <h1>Welcome to Three Star Media</h1>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button class="connectbutton" type="button">Connect with us</button>
+                    <div class="contenttext">Lorem ipsumn..... sill this in more later</div>
+                    <button class="welcomebutton" type="button">Connect with us <div class="triangle-right"></div></button>
             </div>
         </div>
 
         <!-- -->
         <div class="about"> <a id="about"></a>
-            <img src="images/about-us.jpg" width="800" height="700"><!-- temporary image size-->
-            <h1>About Us</h1>
+            <img src="images/about-us.jpg" width="684" height="340"><!-- temporary image size-->
+            <h2>About Us</h2>
             <div>Lorem ipsumn..... sill this in more later</div>
         </div>
 
 
         <div class="services"> <a id="services"></a>
-            <h1>Our Services</h1>
+            <h2>Our Services</h2>
 
-            <!-- -->
+            <!--width="684" height="450" size down to print services -->
+            <!-- add arrows: <div class="triangle-right"></div> -->
+            <!-- put inside  <div class="servicesinner"> -->
+                <!-- add more lorem text-->
+
             <div class="digitalservices"> 
-                <img src="images/digital.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Digital Transformation</h1>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button type="button">Digital Plans</button>
+                <div class="servicesinner">
+                    <img src="images/digital.jpg" width="684" height="450"><!-- temporary image size-->
+                    <h3>Digital Transformation</h3>
+                    <div>Lorem ipsumn..... sill this in more later</div>
+                    <button class="digitalplansbutton" type="button">Digital Plans <div class="triangle-right"></div></button>
+                </div>
             </div>
 
             <!-- -->
             <div class="marketingservices"> 
-                <img src="images/marketing.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Marketing</h1>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button type="button">Marketing Plans</button>
+                <div class="servicesinner">
+                    <img src="images/marketing.jpg" width="800" height="700"><!-- temporary image size-->
+                    <h3>Marketing</h3>
+                    <div>Lorem ipsumn..... sill this in more later</div>
+                    <button type="button">Marketing Plans</button>
+                </div>
             </div>
             <!-- -->
             <div class="videoservices"> 
                 <img src="images/video.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Video</h1>
+                <h3>Video</h3>
                 <div>Lorem ipsumn..... sill this in more later</div>
                 <button type="button">Video Services</button>
             </div>
             <!-- -->
             <div class="webservices"> 
                 <img src="images/web.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Web</h1>
+                <h3>Web</h3>
                 <div>Lorem ipsumn..... sill this in more later</div>
                 <button type="button">Web Services</button>
             </div>     
             <!-- -->
             <div class="printservices"> 
                 <img src="images/print.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Print</h1>
+                <h3>Print</h3>
                 <div>Lorem ipsumn..... sill this in more later</div>
                 <button type="button">Print Services</button>
             </div>
 
+
+            <!-- DOWN TO HERE-->
+
         </div>
         <div class="ourvision">
 
-            <img src="images/vision.jpg" width="800" height="300"><!-- temporary image size-->
+            <img src="images/vision.jpg" width="704" height="280"><!-- temporary image size-->
             
             <div class="ourvisioninner">
-                <h1>Our Vision</h1>
+                <h3>Our Vision</h3>
                 <div>Lorem ipsumn..... sill this in more later</div>
-                <button class="visionbutton" type="button">Connect with us</button>
+                <button class="ourvisionbutton" type="button">Learn More <div class="triangle-right"></div></button>
             </div>
         </div>
 
 
         <!-- -->
         <div class="team"> <a id="team"></a>
-            <h1>Our Team</h1>
+            <h2>Our Team</h2>
 
             <div class="teammember"> 
                 <img src="images/john.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>John Doe</h1>
-                <h2>CEO and Co-owner</h2>
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
                 <hr>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
                     Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
@@ -111,8 +120,8 @@
             </div>
             <div class="teammember"> 
                 <img src="images/bob.jpg" width="800" height="700"><!-- temporary image size-->
-                <h1>Bob Rite</h1>
-                <h2>CFO and Co-owner</h2>
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
                 <hr>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
                     Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
@@ -125,8 +134,8 @@
 
         <!-- -->
         <div class="contactform" action="/index.html"> <a id="contact"></a>
-            <h1>Contact Us</hi>
-            <h2>Send us a message</h2>  
+            <h2>Contact Us</h2>
+            <h3>Send us a message</h3>  
 
             <form>
 
@@ -145,7 +154,7 @@
 
         <!-- -->
         <div class="hours">
-            <h1> Hours of Operation</h1>
+            <h3> Hours of Operation</h3>
 
             <table>
                 <tr>
