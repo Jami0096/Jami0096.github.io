@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body> <!-- Navigation: Orange: ce892a / Bkg 222222  -->
-        <header class="header">
+        <header>
             <div class="navigation">
-                <div class="navlinks"><img src="./images/logo.png"  alt="header image"> </div>
-                <div class="navlinks"><a href="#welcome">Home</a></div><br>
+
+                <div class="navlinkslogo"><img src="./images/logo.png"  alt="header image"> </div>
+                <div class="navlinksselected"><a href="#welcome">Home</a></div>
                 <div class="navlinks"><a href="#about">About Us</a></div>
                 <div class="navlinks"><a href="#services">Services</a></div>
                 <div class="navlinks"><a href="#team">Team</a></div>
                 <div class="navlinks"><a href="#contact">Contact</a></div>
-                <div><input type="text" placeholder="Search.."></div>
+                <div class="searchbox"><span><input type="text" placeholder="Search.."><img class="searchbutton" src="./images/search.png"  alt="search image"> </span></div>
 
             </div>
         </header>
 
         <div class="welcome"> <a id="welcome"></a>
 
-            <img src="images/main-banner.jpg" width="704" height="605"><!-- temporary image size-->
-            
+            <img src="images/main-banner.jpg" width="704" height="605">            
             <div class="welcomeinner">
                 <h1>Welcome to Three Star Media</h1>
                     <div class="contenttext">Lorem ipsumn..... sill this in more later</div>
@@ -32,11 +32,13 @@
             </div>
         </div>
 
-        <!-- -->
+    
         <div class="about"> <a id="about"></a>
-            <img src="images/about-us.jpg" width="684" height="340"><!-- temporary image size-->
+            <img src="images/about-us.jpg" width="684" height="340">
             <h2>About Us</h2>
-            <div>Lorem ipsumn..... sill this in more later</div>
+            <div>LLorem ipsumn ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.orem ipsumn..... sill this in more later</div>
         </div>
 
 
@@ -46,62 +48,89 @@
             <!--width="684" height="450" size down to print services -->
             <!-- add arrows: <div class="triangle-right"></div> -->
             <!-- put inside  <div class="servicesinner"> -->
-                <!-- add more lorem text-->
+             
 
             <div class="digitalservices"> 
                 <div class="servicesinner">
                     <img src="images/digital.jpg" width="684" height="450"><!-- temporary image size-->
-                    <h3>Digital Transformation</h3>
-                    <div>Lorem ipsumn..... sill this in more later</div>
-                    <button class="digitalplansbutton" type="button">Digital Plans <div class="triangle-right"></div></button>
+                    <div class="servicescontent">
+                        <h3>Digital Transformation</h3>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                            Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                            Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.
+                        </div>
+                        <button class="servicesbutton" type="button">Digital Plans <div class="triangle-right"></div></button>
+                    </div>
                 </div>
             </div>
 
             <!-- -->
             <div class="marketingservices"> 
                 <div class="servicesinner">
-                    <img src="images/marketing.jpg" width="800" height="700"><!-- temporary image size-->
-                    <h3>Marketing</h3>
-                    <div>Lorem ipsumn..... sill this in more later</div>
-                    <button type="button">Marketing Plans</button>
+                    <img src="images/marketing.jpg" width="684" height="450"><!-- temporary image size-->
+                    <div class="servicescontent">
+                        <h3>Marketing</h3>
+                        <div>Lorem ipsumn..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                            Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                            Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.
+                        </div>
+                        <button class="servicesbutton" type="button">Marketing Plans <div class="triangle-right"></div></button>
+                    </div>
                 </div>
             </div>
             <!-- -->
-            <div class="videoservices"> 
-                <img src="images/video.jpg" width="800" height="700"><!-- temporary image size-->
-                <h3>Video</h3>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button type="button">Video Services</button>
+            <div class="videoservices">
+                <div class="servicesinner"> 
+                    <img src="images/video.jpg" width="684" height="450"><!-- temporary image size-->
+                    <div class="servicescontent">
+                        <h3>Video Production</h3>
+                        <div>Lorem ipsumn..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                            Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                            Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.</div>
+                        <button class="servicesbutton" type="button">Video Plans <div class="triangle-right"></div></button>
+                    </div>
+                </div>
             </div>
             <!-- -->
-            <div class="webservices"> 
-                <img src="images/web.jpg" width="800" height="700"><!-- temporary image size-->
-                <h3>Web</h3>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button type="button">Web Services</button>
+            <div class="webservices">
+                <div class="servicesinner"> 
+                    <img src="images/web.jpg" width="684" height="450"><!-- temporary image size-->
+                    <div class="servicescontent">
+                        <h3>Web Development</h3>
+                        <div>Lorem ipsumn..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                            Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                            Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.</div>
+                        <button class="servicesbutton" type="button">Web Plans <div class="triangle-right"></div></button>
+                    </div>
+                </div>
             </div>     
             <!-- -->
-            <div class="printservices"> 
-                <img src="images/print.jpg" width="800" height="700"><!-- temporary image size-->
-                <h3>Print</h3>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button type="button">Print Services</button>
-            </div>
-
-
-            <!-- DOWN TO HERE-->
-
-        </div>
-        <div class="ourvision">
-
-            <img src="images/vision.jpg" width="704" height="280"><!-- temporary image size-->
-            
-            <div class="ourvisioninner">
-                <h3>Our Vision</h3>
-                <div>Lorem ipsumn..... sill this in more later</div>
-                <button class="ourvisionbutton" type="button">Learn More <div class="triangle-right"></div></button>
+            <div class="printservices">
+                <div class="servicesinner"> 
+                    <img src="images/print.jpg" width="684" height="450"><!-- temporary image size-->
+                    <div class="servicescontent">
+                        <h3>Print</h3>
+                        <div>Lorem ipsumn..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                            Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                            Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat.</div>
+                        <button class="servicesbutton" type="button">Print Plans <div class="triangle-right"></div></button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- DOWN TO HERE-->
+            <div class="ourvision">
+
+                <img src="images/vision.jpg" width="704" height="280"><!-- temporary image size-->
+                <div class="ourvisioninner">
+                    <h3>Our Vision</h3>
+                    <div>Lorem ipsumn..... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                        Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin.</div>
+                    <button class="ourvisionbutton" type="button">Learn More <div class="triangle-right"></div></button>
+                </div> 
+            </div>
+    
 
 
         <!-- -->
@@ -109,23 +138,29 @@
             <h2>Our Team</h2>
 
             <div class="teammember"> 
-                <img src="images/john.jpg" width="800" height="700"><!-- temporary image size-->
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <hr>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
-                    Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
-                    Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat. 
+                <img src="images/john.jpg" width="680" height="455">
+                <div class="teamcontent">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <hr>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                        Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                        Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat. 
+                    </div>
                 </div>
             </div>
+
+
             <div class="teammember"> 
-                <img src="images/bob.jpg" width="800" height="700"><!-- temporary image size-->
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <hr>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
-                    Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
-                    Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat. 
+                <img src="images/bob.jpg" width="680" height="455">
+                <div class="teamcontent">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <hr>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tristique metus, quis aliquet justo viverra a. 
+                        Praesent pulvinar purus diam, vitae vehicula metus rhoncus vitae. Nunc sit amet nibh eu arcu tristique sollicitudin. 
+                        Praesent eget pharetra massa, gravida malesuada mi. Proin sagittis risus vel justo luctus, at lobortis enim placerat. 
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,6 +169,7 @@
 
         <!-- -->
         <div class="contactform" action="/index.html"> <a id="contact"></a>
+            <div class="contactinner"> 
             <h2>Contact Us</h2>
             <h3>Send us a message</h3>  
 
@@ -146,9 +182,9 @@
                 <input class="text" type="email" id="email" name="email"><br>
         
                 <label>Message:</label><br>
-                <textarea id="message"></textarea>
+                <textarea class="text" id="message"></textarea>
         
-                <button type="submit" value="Send"></button>          
+                <button class="sendbutton" type="submit">Send</button>
             </form>
         </div>
 
@@ -174,8 +210,10 @@
 
         <!-- -->
         <div class="location">
-
+            <h3>Location</h3>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="680" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=area%2051&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:680px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:680px;}</style></div></div>
         </div>
+    </div>
 
         <footer>
             © Copyright Three Star Media, 2020<br>
