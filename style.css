@@ -109,9 +109,13 @@ table {
   }
   
   .about-image {
-    float: left;
+    float: center;
     width: 50px;
     
+  }
+  .about body {
+    font-size: 40px;
+
   }
   
   #contact  {
