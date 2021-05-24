@@ -50,7 +50,7 @@ table {
 
 
 #nav {
-    width: 1200px;
+    width: 870px;
     margin: 0px auto;
     padding: 30px;
   
@@ -107,8 +107,8 @@ table {
   
   .about-image {
     float: left;
-  
     width: 300px;
+    
   }
   
   #contact {
