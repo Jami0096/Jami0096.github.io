@@ -113,11 +113,11 @@ table {
   }
   
   #contact {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 100px 0px;
     background-color: 
-    font-family
   }
-  
+
   .contact-form {
     padding: 30px;
     background-color: goldenrod;
