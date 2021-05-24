@@ -1,13 +1,9 @@
-nav {
-  border-radius: 25px;
-
-}
-
 #nav {
     width: 1200px;
     margin: 0px auto;
     padding: 30px;
   
+    border-radius: 5px;
     border: 3px solid rgb(12, 227, 235);
     background-color: rgb(252, 250, 247);
     text-align: center;
