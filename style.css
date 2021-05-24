@@ -25,6 +25,8 @@
   }
   
   #home {
+    margin-top: 10px;
+    border-radius: 10px;
     padding: 100px;
     background-color: indianred;
   }
