@@ -1,6 +1,9 @@
-#nav {
+nav {
   border-radius: 25px;
 
+}
+
+#nav {
     width: 1200px;
     margin: 0px auto;
     padding: 30px;
