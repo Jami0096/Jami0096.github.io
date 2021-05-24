@@ -1,4 +1,7 @@
 #nav {
+  border-radius: 3px;
+
+
     width: 1200px;
     margin: 0px auto;
     padding: 30px;
@@ -24,9 +27,8 @@
   }
   
   #home {
-    border-radius: 3px;
     padding: 100px;
-    background-color:blueviolet;
+    background-color: indianred;
   }
   
   section.home {
