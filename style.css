@@ -91,7 +91,7 @@ table {
   
   .page-title,
   .section-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-align: center;
   }
   
@@ -112,14 +112,12 @@ table {
     
   }
   
-  #contact {
-    font-family: Arial, Helvetica, sans-serif;
-    font: size 16px; 
+  #contact  {
     padding: 100px 0px;
     background-color: 
-    
-  }
 
+  }
+  
   .contact-form {
     padding: 30px;
     background-color: goldenrod;
