@@ -1,104 +1,280 @@
-#nav {
-    width: 850px;
-    margin: 0px auto;
-    padding: 10px;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile design */
+
+@media only screen 
+and (max-device-width : 767px) {
+
+    /* Body */
+    html body {
+      display: revert;
+
+      margin: 0px;
+    }
+    /*  Navigation */
+
+    body #nav {
+      display:flexbox;
+
+      margin: 0px;
+      padding: 4px;
+
+      border-radius: 4px;
+      border: 3px solid rgb(110, 110, 109);
+      width: auto;
+
+      background: rgb(102,102,102);
+      background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
+
+    }
+
+    body #nav-link {
+      margin: 0px;
+    }
+
+    /* Main */
+    body .main {
+      display: flexblock;
+    }
+
+    /*  Main -> Home  */
+    .main #home {
+      padding: 0px;
+
+      display: flexbox;
+      background-color: yellow;
+      font-size: smaller;
+
+    }
+
+    /* Main > Home > Title */
+    .main #home .page-title {
+      color: deeppink;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+    .main #home p {
+      color: deeppink;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /*  Main -> About  */
+    .main #about {
+      padding: 0px;
+
+      display: flexbox;
+      background-color: yellow;
+      font-size: small;
+
+    }
+
+    /* Main > About > Title */
+    #about .section-title {
+      /* float: left; */
+    }
+
+      /*  Main -> About-image  */
+      .main .about-image {
+        width: 50px;
   
+      }
+
+    /*  Main -> Contact  */
+    .main #contact {
+      padding: 0px;
+
+      display: flexbox;
+      background-color: yellow;
+      font-size: smaller;
+  
+    }
+
+    /* Main > Contact > Title */
+    #contact .section-title {
+ 
+    }
+
+    #contact .contact-form {
+      width: auto;
+    }
+
+    /* Footer paragrahg */
+    footer p {
+      color: firebrick;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop design */
+
+@media only screen
+and (min-device-width : 768px) {
+  
+   /* Body */
+   html body {
+    display: revert;
+
+    margin: 0px;
+  }
+  /*  Navigation */
+
+  body #nav {
+    display:flexbox;
+
+    margin: 0px;
+    padding: 4px;
+
     border-radius: 4px;
-    border: 3px solid rgb(226, 24, 24);
+    border: 3px solid yellow;
     background-color: grey;
-    text-align: center;
-  }
-  
-  #main {
-    max-width: 1200px;
-    margin: 0px auto;
-  
-    background-color: rgb(215, 219, 210);
-  }
-  
-  .nav .nav-link {
-    margin: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-  }
-  
-  #home {
-    margin-top: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(129, 120, 120);
-  }
-  
-  section.home {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: yellow
-  }
-  
-  .page-title,
-  .section-title {
-    font-size: 155px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  #about {
-    padding: 100px 10px;
-    background-color: rgb(185, 218, 240);
-    font-size: 3.5rem;
-  }
-  
-  .about {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: rgb(17, 17, 19)
-  }
-  
-  .about-image {
-    float: center;
-    width: 50px;
-    
-  }
-  .about body {
-    font-size: 40px;
+    width: auto;
 
   }
-  
-  #contact  {
-    padding: 100px 0px;
-    background-color:ivory
-  }
-  
-  .contact-form {
-    padding: 30px;
-    background-color: goldenrod;
-    width: 600px;
-    margin: 0px auto;
-  }
-  
-  label {
-    font-size: 1.5rem;
-  
-  }
-  
-  .contact-form-input {
-    padding: 10px;
-    width: 100%;
+
+  body #nav-link {
+    margin: 0px;
   }
 
-
-
-
-
-
-
-
-
-  #main div {
-    -ms-flex: 1; /* IE 10 */
-    flex: 1;
+  /* Main */
+  body .main {
+    display: flexblock;
   }
+
+  /*  Main -> Home  */
+  .main #home {
+    padding: 0px;
+
+    display: flexbox;
+    background-color: yellow;
+    font-size: smaller;
+
+  }
+
+  /* Main > Home > Title */
+  .main #home .page-title {
+    color: deeppink;
+  }
+
+  .main #home p {
+    color: deeppink;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /*  Main -> About  */
+  .main #about {
+    padding: 0px;
+
+    display: flexbox;
+    background-color: yellow;
+    font-size: small;
+
+  }
+
+  /* Main > About > Title */
+  #about .section-title {
+    /* float: left; */
+  }
+
+    /*  Main -> About-image  */
+    .main .about-image {
+      width: 50px;
+
+    }
+
+  /*  Main -> Contact  */
+  .main #contact {
+    padding: 0px;
+
+    display: flexbox;
+    background-color: yellow;
+    font-size: smaller;
+
+  }
+
+  /* Main > Contact > Title */
+  #contact .section-title {
+
+  }
+
+  #contact .contact-form {
+    width: auto;
+  }
+
+  /* Footer paragrahg */
+  footer p {
+    color: firebrick;
+  }
+}
