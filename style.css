@@ -2,6 +2,8 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+
+   - Edit / remove font override
 */
 
 html, body, div, span, applet, object, iframe,
@@ -21,7 +23,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: none;
 	vertical-align: baseline;      
   color: rgb(7, 7, 7);
  
@@ -70,14 +71,11 @@ and (max-device-width : 767px) {
 
     /* Body */
     html body {
-      display: revert;
       margin: 0px;
     }
     /*  Navigation */
 
     body #nav {
-      display:flexbox;
-      margin: 0px;
       padding: 10px;
       border-radius: 8px;
       border: 3px solid rgb(110, 110, 109);
@@ -85,30 +83,19 @@ and (max-device-width : 767px) {
       background: rgb(102,102,102);
       background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
     }
 
     body #nav-link {
       margin: 0px;
- 
-      
     }
 
-    /* Main */
-    body .main {
-      display: flexblock;
-    }
 
     /*  Main -> Home  */
     .main #home {
       padding: 40px;
-      display: flexbox;
       opacity: 1;
       background-color: rgb(112, 126, 133); 
       font-size: smaller;   
-     
-
-    
     }
 
     /* Main > Home > Title */
@@ -129,12 +116,16 @@ and (max-device-width : 767px) {
     .main #about {
       padding: 20px;
       color: rgb(17, 177, 226);
-      display: flexbox;
       background-color: rgb(151, 193, 221);;
       font-size: 16px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    }
 
+    .main #about p {
+      color:rgb(7, 7, 7);
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 10px;
     }
 
     /* Main > About > Title */
@@ -148,20 +139,16 @@ and (max-device-width : 767px) {
       /*  Main -> About-image  */
       .main .about-image {
         width: 45px;
-  
       }
 
     /*  Main -> Contact  */
     .main #contact {
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flexbox;
       padding: 20px;
       font-size: 16px;
       background: rgb(102,102,102);
       background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
       font-size: 16px;
-      
-  
     }
 
     /* Main > Contact > Title */
@@ -169,9 +156,14 @@ and (max-device-width : 767px) {
       color: rgb(112, 126, 133); 
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       padding: 30px;
-     
     }
 
+    .main #contact p {
+      color:rgb(7, 7, 7);
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 10px;
+    }
 
     #contact .contact-form {
       width: auto;
@@ -180,18 +172,14 @@ and (max-device-width : 767px) {
       width: auto;
     }
 
-
     .contact-form-section{
       width: auto;
-      padding: auto;
-  
     }
 
 
     .input-contact-form-section {
       padding: 30px;
       border: grey;
-
     }
 
 
@@ -221,13 +209,11 @@ and (min-device-width : 768px) {
   
    /* Body */
    html body {
-    display: revert;
     margin: 0px;
   }
   /*  Navigation */
 
   body #nav {
-    display:flexbox;
     margin: 0px;
     padding: 10px;
     border-radius: 4px;
@@ -235,25 +221,20 @@ and (min-device-width : 768px) {
     width: auto;
     background: rgb(102,102,102);
     background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
-  
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   }
 
   body #nav-link {
     margin: 0px;
- 
   }
 
   /* Main */
   body .main {
-    display: flexblock;
   }
 
   /*  Main -> Home  */
   .main #home {
     padding: 40px;
-    display: flexbox;
     opacity: 1;
     background-color: rgb(112, 126, 133);
     font-size: 16px;
@@ -277,12 +258,16 @@ and (min-device-width : 768px) {
   .main #about {
     padding: 40px;
     color: rgb(17, 177, 226);
-    display: flexbox;
     background-color: rgb(151, 193, 221);;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-
+  .main #about p {
+    color:rgb(7, 7, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 20px;
   }
 
   /* Main > About > Title */
@@ -296,19 +281,16 @@ and (min-device-width : 768px) {
     /*  Main -> About-image  */
     .main .about-image {
       width: 50px;
-
     }
 
   /*  Main -> Contact  */
   .main #contact {
     padding: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flexbox;
     background-color: rgb(151, 193, 221);;
     background: rgb(102,102,102);
     background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
     font-size: 16px;
-
   }
 
   /* Main > Contact > Title */
@@ -316,14 +298,19 @@ and (min-device-width : 768px) {
     color: rgb(112, 126, 133); 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
+  }
 
+  .main #contact p {
+    color:rgb(7, 7, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 20px;
   }
 
   #contact .contact-form {
     width: auto;
     opacity: 0.5;
     background-color: gray;
-
   }
 
   /* Footer paragrahg */
