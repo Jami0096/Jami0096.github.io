@@ -1,0 +1,109 @@
+#nav {
+    width: 850px;
+    margin: 0px auto;
+    padding: 10px;
+  
+    border-radius: 4px;
+    border: 3px solid rgb(226, 24, 24);
+    background-color: grey;
+    text-align: center;
+  }
+  
+  #main {
+    max-width: 1200px;
+    margin: 0px auto;
+  
+    background-color: rgb(215, 219, 210);
+  }
+  
+  .nav .nav-link {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #home {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(129, 120, 120);
+  }
+  
+  section.home {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: yellow;
+  }
+  
+  .page-title,
+  .section-title {
+    font-size: 155px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #about {
+    padding: 100px 10px;
+    background-color: rgb(185, 218, 240);
+    font-size: 3.5rem;
+  }
+  
+  .about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(17, 17, 19)
+  }
+  
+  .about-image {
+    float: center;
+    width: 50px;
+    
+  }
+  .about body {
+    font-size: 40px;
+
+  }
+  
+  #contact  {
+    padding: 100px 0px;
+    background-color:ivory
+  }
+  
+  .contact-form {
+    padding: 30px;
+    background-color: goldenrod;
+    width: 600px;
+    margin: 0px auto;
+  }
+  
+  label {
+    font-size: 1.5rem;
+  
+  }
+  
+  .contact-form-input {
+    padding: 10px;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+  #main div {
+    -ms-flex: 1; /* IE 10 */
+    flex: 1;
+  }
+
+section .about {
+  display: block;
+  background-color: yellow;
+}
