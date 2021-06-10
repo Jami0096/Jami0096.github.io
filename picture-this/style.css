@@ -1,321 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-
-   - Edit / remove font override
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;      
-  color: rgb(7, 7, 7);
- 
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+html,
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile design */
-
-@media only screen 
-and (max-device-width : 767px) {
-
-    /* Body */
-    html body {
-      margin: 0px;
-    }
-    /*  Navigation */
-
-    body #nav {
-      padding: 10px;
-      border-radius: 8px;
-      border: 3px solid rgb(110, 110, 109);
-      width: auto;
-      background: rgb(102,102,102);
-      background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    body #nav-link {
-      margin: 0px;
-    }
-
-
-    /*  Main -> Home  */
-    .main #home {
-      padding: 40px;
-      opacity: 1;
-      background-color: rgb(112, 126, 133); 
-      font-size: smaller;   
-    }
-
-    /* Main > Home > Title */
-    .main #home .page-title {
-      color:  rgb(151, 193, 221);;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      padding: 10px;
-    }
-
-    .main #home p {
-      color:rgb(7, 7, 7);
-      font-size: 16px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 10px;
-    }
-
-    /*  Main -> About  */
-    .main #about {
-      padding: 20px;
-      color: rgb(17, 177, 226);
-      background-color: rgb(151, 193, 221);;
-      font-size: 16px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .main #about p {
-      color:rgb(7, 7, 7);
-      font-size: 16px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 10px;
-    }
-
-    /* Main > About > Title */
-    #about .section-title {
-      color: rgb(17, 177, 226);
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      padding: 20px;
-
-    }
-
-      /*  Main -> About-image  */
-      .main .about-image {
-        width: 45px;
-      }
-
-    /*  Main -> Contact  */
-    .main #contact {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-      font-size: 16px;
-      background: rgb(102,102,102);
-      background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
-      font-size: 16px;
-    }
-
-    /* Main > Contact > Title */
-    #contact .section-title {
-      color: rgb(112, 126, 133); 
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      padding: 30px;
-    }
-
-    .main #contact p {
-      color:rgb(7, 7, 7);
-      font-size: 16px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 10px;
-    }
-
-    #contact .contact-form {
-      width: auto;
-      opacity: 0.5;
-      background-color: gray;
-      width: auto;
-    }
-
-    .contact-form-section{
-      width: auto;
-    }
-
-
-    .input-contact-form-section {
-      padding: 30px;
-      border: grey;
-    }
-
-
-    /* Footer paragrahg */
-    footer p {
-      color: rgb(7, 6, 6);
-    }
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
 }
 
+.title {
+  padding: 50px 25px;
+  text-align: center;
+}
 
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-
-
-
-
-
-
-
-
-
-/* Desktop design */
-
-@media only screen
-and (min-device-width : 768px) {
-  
-   /* Body */
-   html body {
-    margin: 0px;
-  }
-  /*  Navigation */
-
-  body #nav {
-    margin: 0px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 3px solid rgb(110, 110, 109);
-    width: auto;
-    background: rgb(102,102,102);
-    background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  }
-
-  body #nav-link {
-    margin: 0px;
-  }
-
-  /* Main */
-  body .main {
-  }
-
-  /*  Main -> Home  */
-  .main #home {
-    padding: 40px;
-    opacity: 1;
-    background-color: rgb(112, 126, 133);
-    font-size: 16px;
-  }
-
-  /* Main > Home > Title */
-  .main #home .page-title {
-    color:  rgb(151, 193, 221);;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
-  }
-
-  .main #home p {
-    color:rgb(7, 7, 7);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    font-size: 20px;
-  }
-
-  /*  Main -> About  */
-  .main #about {
-    padding: 40px;
-    color: rgb(17, 177, 226);
-    background-color: rgb(151, 193, 221);;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .main #about p {
-    color:rgb(7, 7, 7);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    font-size: 20px;
-  }
-
-  /* Main > About > Title */
-  #about .section-title {
-    color: rgb(17, 177, 226); 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 20px;
-    /* float: left; */
-  }
-
-    /*  Main -> About-image  */
-    .main .about-image {
-      width: 50px;
-    }
-
-  /*  Main -> Contact  */
-  .main #contact {
-    padding: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(151, 193, 221);;
-    background: rgb(102,102,102);
-    background: linear-gradient(0deg, rgba(102,102,102,1) 0%, rgba(0,212,255,1) 100%);
-    font-size: 16px;
-  }
-
-  /* Main > Contact > Title */
-  #contact .section-title {
-    color: rgb(112, 126, 133); 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
-  }
-
-  .main #contact p {
-    color:rgb(7, 7, 7);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    font-size: 20px;
-  }
-
-  #contact .contact-form {
-    width: auto;
-    opacity: 0.5;
-    background-color: gray;
-  }
-
-  /* Footer paragrahg */
-  footer p {
-    color: rgb(5, 5, 5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
