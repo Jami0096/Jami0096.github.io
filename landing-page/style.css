@@ -48,7 +48,7 @@ img {
   height: auto;
 }
 
-footer {
+.footer {
   background-color: #fffd8c;
 }
 
@@ -57,7 +57,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .landingmain {
-
+  .landingmain h1 {
+    font-size: larger; /* todo */
+  }  
+  
+  .landingmain h2 {
+    font-size: medium; /* todo */
   }
 }
