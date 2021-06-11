@@ -67,14 +67,12 @@ img {
 }
 
 .landingmain {
+  display: flex;
   width: 500px; /* todo*/
 }
 
 .applybox {
-  width: 500px; /* todo*/
-}
-
-.applybox {
+  display: flex;
   width: 500px; /* todo*/
 }
 
