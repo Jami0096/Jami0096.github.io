@@ -17,14 +17,7 @@ html,
 body {
   margin: 0;
   border: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.header {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  background-color: cadetblue;
+  font-family: 'Roboto', sans-serif; /* change to monzotto*/
 }
 
 .title {
@@ -48,10 +41,6 @@ img {
   height: auto;
 }
 
-.footer {
-  background-color: #fffd8c;
-}
-
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
@@ -64,4 +53,31 @@ img {
   .landingmain h2 {
     font-size: medium; /* todo */
   }
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.landingmain {
+  width: 500px; /* todo*/
+}
+
+.applybox {
+  width: 500px; /* todo*/
+}
+
+.applybox {
+  width: 500px; /* todo*/
+}
+
+.footer {
+  background-color: #fffd8c;
 }
