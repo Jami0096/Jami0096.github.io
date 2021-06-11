@@ -48,6 +48,10 @@ img {
   height: auto;
 }
 
+footer {
+  background-color: #fffd8c;
+}
+
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
