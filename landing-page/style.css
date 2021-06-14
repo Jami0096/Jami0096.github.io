@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
 /* Colors
 
 #57eeab - green
+#F4F4F5- pink apply box 
 
 #fffd8c - yellow
 
@@ -18,65 +18,134 @@ body {
   margin: 0;
   border: 0;
   font-family: "Montserrat", sans-serif;
+  color: #333131;
+  background-color: #F4F4F5;
 }
 
-.title {
-  padding: 50px 25px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+.header img {
+  width: 115px;
   height: auto;
-}
 
-@media (min-width: 960px) {
-  .header {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .landingmain h1 {
-    font-size: larger; 
-    color:rgb(7, 7, 7);
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;/* todo */
-  }  
-  
-  .landingmain h2 {
-    font-size: medium; /* todo */
-  }
-}
-
-
-
-/* -------------------------------------------------------------------- */
-
-.header {
-
+  margin: 25px;
 }
 
 .landingmain {
   display: block;
-  width: 500px; /* todo - left */
+  margin: 25px;
+}
+
+.landingmain h1 {
+  font-size: 60px;
+  padding: 10px;
+}  
+
+.landingmain h2 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .applybox {
   display: block;
-  width: 500px; /* todo - right */
+  
+  border: none;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+}
+
+.applybox a:link {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:visited {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:hover {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox .applytext {
+  margin: 10px;
+}
+
+.applybox .hidetext{
+  display: none;
+}
+
+.applybox h1 { 
+  font-size:  40px;
+  padding-left: 25px;
+}
+
+.applybox h2 { 
+  font-size:  16px;
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.applybox input {
+  background-color: #F4F4F5;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 82%;
+  display: block;
+}
+
+.applybox input .checkbox {
+  padding: 10px;
+  margin: 5px;
+}
+
+.applybox .drivebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  background-color: #57eeab;
+  margin: 15px;
+  padding: 10px;
 }
 
 .footer {
   background-color: #fffd8c;
+  padding: 25px;
 }
+
+.footer h1 {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.calculatebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff8480;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* desktop */
+@media (min-width: 960px) {
+  .header img {
+    width: 115px;
+    height: auto;
+  
+    margin: 25px;
+  }
+}
+
+
