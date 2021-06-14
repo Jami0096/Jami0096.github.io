@@ -47,7 +47,11 @@ img {
   }
 
   .landingmain h1 {
-    font-size: larger; /* todo */
+    font-size: larger; 
+    color:rgb(7, 7, 7);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;/* todo */
   }  
   
   .landingmain h2 {
