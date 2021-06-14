@@ -11,7 +11,9 @@
 #f7f7ff - white
 
 #333131 - black
+Mobil view size 375max
 */
+
 
 html,
 body {
@@ -44,10 +46,16 @@ body {
   font-weight: normal;
 }
 
+
+
+
+
 .applybox {
   display: block;
-  
+  width: 300px;
+  height: auto;
   border: none;
+  margin: 35px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
@@ -72,7 +80,164 @@ body {
 }
 
 .applybox .applytext {
-  margin: 10px;
+  margin: 20px;
+
+  padding: 10px;
+  border: none;
+
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+}
+
+.applybox .hidetext{
+  display: none;
+}
+
+.applybox h1 { 
+  font-size:  40px;
+  padding-left: 25px;
+}
+
+.applybox h2 { 
+  font-size:  16px;
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.applybox input {
+  background-color: #F4F4F5;
+  padding: 10px;
+  border: none;
+/*
+  margin: 5px;
+  margin-left: 25px;
+  margin-bottom: 15px;*/
+  border-radius: 10px;
+  width: 40px;
+  display: block;
+}
+
+.applybox input .checkbox {
+  padding: 10px;
+  margin: 5px;
+  width: 10px;
+}
+
+.applybox .drivebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  background-color: #57eeab;
+  margin: 25px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #fffd8c;
+  padding: 25px;
+}
+
+.footer h1 {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.calculatebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff8480;
+  margin: 15px;
+  padding: 10px;
+}
+
+
+
+
+
+
+/*__________________view size 1920max_____________________________________*/
+/* desktop 
+@media (min-width: 1920px) {  */
+
+  .header img {
+    width: 50px;
+    height: auto;
+    padding: 25px;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+
+
+.landingmain {
+  display: block;
+  margin: 40px;
+  padding: 30px;
+}
+
+.landingmain h1 {
+  font-size: 80px;
+  padding: 100px;
+  margin-left: 60px;
+} 
+
+
+
+.landingmain h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.applybox {
+  display: block; 
+
+
+  width: 300px;
+  height: auto;
+  border: none;
+  margin: 35px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+
+}
+
+
+
+
+.applybox a:link {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:visited {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:hover {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox .applytext {
+  margin: 20px;
+
+  padding: 10px;
+  border: none;
+
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
 }
 
 .applybox .hidetext{
@@ -99,7 +264,7 @@ body {
   margin-bottom: 15px;
   border-radius: 10px;
   width: 82%;
-  display: block;
+  display: flex;
 }
 
 .applybox input .checkbox {
@@ -113,7 +278,7 @@ body {
   border-radius: 15px;
   border: none;
   background-color: #57eeab;
-  margin: 15px;
+  margin: 25px;
   padding: 10px;
 }
 
@@ -138,14 +303,144 @@ body {
   padding: 10px;
 }
 
-/* desktop */
-@media (min-width: 960px) {
+
+
+/*-----------tablet---view size 768----------------------------*/
+
+
+@media (min-width: 768px) {
   .header img {
-    width: 115px;
+    width: 100px;
     height: auto;
-  
-    margin: 25px;
-  }
+    padding: 25px;
+    margin-left: 50px;
+    margin-top: 1px;
 }
+
+
+.landingmain {
+  display: block;
+  margin: 5px;
+  padding: 30px;
+}
+
+.landingmain h1 {
+  font-size: 80px;
+  padding: 25px;
+} 
+
+
+
+.landingmain h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.applybox {
+  display: block;
+  width: 300px;
+  height: auto;
+  border: none;
+  margin: 35px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+}
+
+.applybox a:link {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:visited {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox a:hover {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.applybox .applytext {
+  margin: 20px;
+
+  padding: 10px;
+  border: none;
+
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+}
+
+.applybox .hidetext{
+  display: none;
+}
+
+.applybox h1 { 
+  font-size:  40px;
+  padding-left: 25px;
+}
+
+.applybox h2 { 
+  font-size:  16px;
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.applybox input {
+  background-color: #F4F4F5;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 82%;
+  display: flex;
+}
+
+.applybox input .checkbox {
+  padding: 10px;
+  margin: 5px;
+}
+
+.applybox .drivebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  background-color: #57eeab;
+  margin: 25px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #fffd8c;
+  padding: 25px;
+}
+
+.footer h1 {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.calculatebutton {
+  font-size:  24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff8480;
+  margin: 15px;
+  padding: 10px;
+}
+
+
+
 
 
