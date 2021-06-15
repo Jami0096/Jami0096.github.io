@@ -11,7 +11,12 @@
 #f7f7ff - white
 
 #333131 - black
-Mobil view size 375max
+Mobile view size 375max
+
+
+
+width: calc(100% - 40px);
+- use to calculate full width minus left+right margin+paddings
 */
 
 
@@ -22,40 +27,40 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #333131;
   background-color: #F4F4F5;
+  z-index:0;
 }
 
 .header img {
   width: 115px;
   height: auto;
-
-  margin: 25px;
+  
 }
 
 .landingmain {
   display: block;
-  margin: 25px;
+  margin: 0px 10px 0px 10px;
 }
 
 .landingmain h1 {
   font-size: 60px;
   padding: 10px;
+  margin: 0px 10px 0px 10px;
 }  
 
 .landingmain h2 {
   font-size: 24px;
   font-weight: normal;
+  margin: 0px 10px 0px 10px;
 }
 
 
 
 
-
+/* Used for the Apply Box */
 .applybox {
-  display: block;
-  width: 300px;
-  height: auto;
+  width: calc(100% - 70px);
   border: none;
-  margin: 35px;
+  margin: 0px 35px 0px 35px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
@@ -106,23 +111,28 @@ body {
   padding-left: 25px;
 }
 
-.applybox input {
-  background-color: #F4F4F5;
-  padding: 10px;
+.applybox .inputclass {
+  /*background-color: #F4F4F5;*/
+  background-color: #33F433;
+  margin: 5px 25px 5px 25px;
+  padding: 10px 5px 10px 5px;
   border: none;
-/*
-  margin: 5px;
-  margin-left: 25px;
-  margin-bottom: 15px;*/
   border-radius: 10px;
-  width: 40px;
-  display: block;
+  width: calc(100% - 60px);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
-.applybox input .checkbox {
-  padding: 10px;
-  margin: 5px;
-  width: 10px;
+.applybox .inputcheckbox {
+   /*background-color: #F4F4F5;*/
+   background-color: #33F433;
+   margin: 5px 25px 5px 25px;
+   padding: 10px 5px 10px 5px;
+   border: none;
+   border-radius: 10px;
+   width: calc(100% - 60px);
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px; 
 }
 
 .applybox .drivebutton {
@@ -133,6 +143,8 @@ body {
   background-color: #57eeab;
   margin: 25px;
   padding: 10px;
+
+  width: calc(100% - 70px);
 }
 
 .footer {
@@ -159,288 +171,70 @@ body {
 
 
 
-
-
-/*__________________view size 1920max_____________________________________*/
-/* desktop 
-@media (min-width: 1920px) {  */
-
-  .header img {
-    width: 50px;
-    height: auto;
-    padding: 25px;
-    margin-left: 50px;
-    margin-top: 1px;
+.row {
+  flex-direction: column;
 }
 
+.column {
+  display: block;
+}
+
+/* Show backgroundimage mobile, hide desktop version */
+.columnbgimagedesktop {
+  display: none;
+}
+.columnbgimagemobile {
+  display: block;
+}
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 639px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+/* On screens that are 600px wide or more, make the columns next to each other instead of side by side*/
+/* Container for flexboxes */
+.row {
+  flex-direction: unset;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
 
 .landingmain {
+  float: left;
+  width: 530px;
+  margin: 0px 10px 0px 0px;
+}
+
+
+/* Hide backgroundimage mobile, Show desktop version */
+.columnbgimagedesktop {
+  float: left;
   display: block;
-  margin: 40px;
-  padding: 30px;
+  position: fixed;
 }
-
-.landingmain h1 {
-  font-size: 80px;
-  padding: 100px;
-  margin-left: 60px;
-} 
-
-
-
-.landingmain h2 {
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.applybox {
-  display: block; 
-
-
-  width: 300px;
-  height: auto;
-  border: none;
-  margin: 35px;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-
-}
-
-
-
-
-.applybox a:link {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox a:visited {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox a:hover {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox .applytext {
-  margin: 20px;
-
-  padding: 10px;
-  border: none;
-
-  margin-left: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-
-}
-
-.applybox .hidetext{
+.columnbgimagemobile {
   display: none;
 }
 
-.applybox h1 { 
-  font-size:  40px;
-  padding-left: 25px;
+
+  .applybox {
+    float: right;
+    width: 530px;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  }
 }
-
-.applybox h2 { 
-  font-size:  16px;
-  font-weight: normal;
-  padding-left: 25px;
-}
-
-.applybox input {
-  background-color: #F4F4F5;
-  padding: 10px;
-  border: none;
-  margin: 5px;
-  margin-left: 25px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  width: 82%;
-  display: flex;
-}
-
-.applybox input .checkbox {
-  padding: 10px;
-  margin: 5px;
-}
-
-.applybox .drivebutton {
-  font-size:  24px;
-  font-weight: bold;
-  border-radius: 15px;
-  border: none;
-  background-color: #57eeab;
-  margin: 25px;
-  padding: 10px;
-}
-
-.footer {
-  background-color: #fffd8c;
-  padding: 25px;
-}
-
-.footer h1 {
-  font-size: 24px;
-  font-weight: bold;
-
-}
-
-.calculatebutton {
-  font-size:  24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  background-color: #ff8480;
-  margin: 15px;
-  padding: 10px;
-}
-
-
-
-/*-----------tablet---view size 768----------------------------*/
-
-
-@media (min-width: 768px) {
-  .header img {
-    width: 100px;
-    height: auto;
-    padding: 25px;
-    margin-left: 50px;
-    margin-top: 1px;
-}
-
-
-.landingmain {
-  display: block;
-  margin: 5px;
-  padding: 30px;
-}
-
-.landingmain h1 {
-  font-size: 80px;
-  padding: 25px;
-} 
-
-
-
-.landingmain h2 {
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.applybox {
-  display: block;
-  width: 300px;
-  height: auto;
-  border: none;
-  margin: 35px;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-}
-
-.applybox a:link {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox a:visited {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox a:hover {
-  color: #ff8480;
-  text-decoration: none;
-}
-
-.applybox .applytext {
-  margin: 20px;
-
-  padding: 10px;
-  border: none;
-
-  margin-left: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-
-}
-
-.applybox .hidetext{
-  display: none;
-}
-
-.applybox h1 { 
-  font-size:  40px;
-  padding-left: 25px;
-}
-
-.applybox h2 { 
-  font-size:  16px;
-  font-weight: normal;
-  padding-left: 25px;
-}
-
-.applybox input {
-  background-color: #F4F4F5;
-  padding: 10px;
-  border: none;
-  margin: 5px;
-  margin-left: 25px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  width: 82%;
-  display: flex;
-}
-
-.applybox input .checkbox {
-  padding: 10px;
-  margin: 5px;
-}
-
-.applybox .drivebutton {
-  font-size:  24px;
-  font-weight: bold;
-  border-radius: 15px;
-  border: none;
-  background-color: #57eeab;
-  margin: 25px;
-  padding: 10px;
-}
-
-.footer {
-  background-color: #fffd8c;
-  padding: 25px;
-}
-
-.footer h1 {
-  font-size: 24px;
-  font-weight: bold;
-
-}
-
-.calculatebutton {
-  font-size:  24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  background-color: #ff8480;
-  margin: 15px;
-  padding: 10px;
-}
-
-
-
-
-
