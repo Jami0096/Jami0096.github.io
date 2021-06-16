@@ -27,7 +27,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #333131;
   background-color: #F4F4F5;
-  z-index:0;
+
 }
 
 .header img {
@@ -168,7 +168,9 @@ body {
   padding: 10px;
 }
 
-
+.iconbox img{
+margin: 10px;
+}
 
 
 .row {
@@ -179,10 +181,9 @@ body {
   display: block;
 }
 
+
+
 /* Show backgroundimage mobile, hide desktop version */
-.columnbgimagedesktop {
-  display: none;
-}
 .columnbgimagemobile {
   display: block;
 }
@@ -192,10 +193,42 @@ body {
 
 /* Tablet */
 @media screen and (min-width: 639px) {
+
+  body {
+    margin: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #333131;
+    background-color: #F4F4F5;
+  }
+
+  /* Show backgroundimage mobile, hide desktop version */
+.columnbgimagemobile {
+  display: block;
+}
+
 }
 
 /* Desktop */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1081px) {
+
+  body {
+    margin: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #333131;
+    background-color: #F4F4F5;
+    background-image: url("images/bg-image/scooter.svg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center 160px;
+    background-size: 700px auto;
+  }
+
+  /* Show backgroundimage mobile, hide desktop version */
+.columnbgimagemobile {
+  display: none;
+}
 
 /* On screens that are 600px wide or more, make the columns next to each other instead of side by side*/
 /* Container for flexboxes */
@@ -228,7 +261,7 @@ body {
   .applybox {
     float: right;
     width: 530px;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 30px 10px;
     border: none;
     background-color: #fff;
     border-radius: 25px;
