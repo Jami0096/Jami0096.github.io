@@ -112,8 +112,7 @@ body {
 }
 
 .applybox .inputclass {
-  /*background-color: #F4F4F5;*/
-  background-color: #33F433;
+  background-color: #F4F4F5;
   margin: 5px 25px 5px 25px;
   padding: 10px 5px 10px 5px;
   border: none;
@@ -124,8 +123,7 @@ body {
 }
 
 .applybox .inputcheckbox {
-   /*background-color: #F4F4F5;*/
-   background-color: #33F433;
+   background-color: #F4F4F5;
    margin: 5px 25px 5px 25px;
    padding: 10px 5px 10px 5px;
    border: none;
@@ -164,6 +162,7 @@ body {
   border: none;
   border-radius: 15px;
   background-color: #ff8480;
+  color: #fff;
   margin: 15px;
   padding: 10px;
 }
@@ -188,6 +187,11 @@ margin: 10px;
   display: block;
 }
 
+/* Hide extra text on mobile */
+.hidetext {
+  display: none;
+}
+
 
 
 
@@ -203,9 +207,13 @@ margin: 10px;
   }
 
   /* Show backgroundimage mobile, hide desktop version */
-.columnbgimagemobile {
-  display: block;
-}
+  .columnbgimagemobile {
+    display: block;
+  }
+
+  .hidetext {
+    display: inherit;
+  }
 
 }
 
@@ -269,5 +277,9 @@ margin: 10px;
     -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
     -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  }
+
+  .hidetext {
+    display: inherit;
   }
 }
