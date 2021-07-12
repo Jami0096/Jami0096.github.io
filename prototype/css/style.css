@@ -108,8 +108,8 @@ html {
   
   .applybox h2 { 
 	font-size:  16px;
-	font-weight: normal;
-	padding-left: 25px;
+	font-weight: bolder;
+	padding: 25px;
   }
   
   .applybox .inputclass {
