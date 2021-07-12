@@ -410,14 +410,14 @@ header {
 
 /* Body backgrounds */
 
-body .aboutbody {
-	background-image: url("/prototype/images/bkg1.png");
+.aboutbody {
+	background-image: url("https://jami0096.github.io/prototype/images/bkg1.png");
 }
 
-body .portfoliobody {
-	background-image: url("/prototype/images/bkg2.png");
+.portfoliobody {
+	background-image: url("https://jami0096.github.io/prototype/images/bkg2.png");
 }
 
-body .contactbody {
-	background-image: url("/prototype/images/bkg3.png");
+.contactbody {
+	background-image: url("https://jami0096.github.io/prototype/images/bkg3.png");
 }
