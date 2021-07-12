@@ -156,17 +156,6 @@ body {
     background-size: 100% 100%;
 }
 
-body .aboutbody {
-	background-image: url("https://jami0096.github.io/prototype/images/bkg1.png");
-}
-
-body .portfoliobody {
-	background-image: url("https://jami0096.github.io/prototype/images/bkg2.png");
-}
-
-body .contactbody {
-	background-image: url("https://jami0096.github.io/prototype/images/bkg3.png");
-}
 /* Container */
 .container {
 	width: 90%;
@@ -416,4 +405,19 @@ header {
     display: block;
     text-align: left;
   }
+}
+
+
+/* Body backgrounds */
+
+body .aboutbody {
+	background-image: url("/prototype/images/bkg1.png");
+}
+
+body .portfoliobody {
+	background-image: url("/prototype/images/bkg2.png");
+}
+
+body .contactbody {
+	background-image: url("/prototype/images/bkg3.png");
 }
