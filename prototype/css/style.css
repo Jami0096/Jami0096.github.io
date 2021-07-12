@@ -160,7 +160,9 @@ body .aboutbody {
 	background-image: url("images/bkg1.png");
 }
 
-
+body .portfoliobody {
+	background-image: url("images/bkg2.png");
+}
 /* Container */
 .container {
 	width: 90%;
