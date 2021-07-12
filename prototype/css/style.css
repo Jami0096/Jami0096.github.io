@@ -14,6 +14,10 @@ Fonts:
 
 */
 
+html {
+	background-color: #111;
+}
+
 /* Topnav elements from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 
 /* Add a black background color to the top navigation */
@@ -421,3 +425,9 @@ header {
 .contactbody {
 	background-image: url("https://jami0096.github.io/prototype/images/bkg3.png");
 }
+
+.biocolumn {
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+	margin: 10px;
+  }
