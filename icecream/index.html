@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-3">
           <img src="images/logo.png" width="100%">
-          <img class="pt-4" src="https://picsum.photos/id/237/200" width="150px">
+          <img class="pt-4" src="https://picsum.photos/id/237/200" width="100%">
           <img src="https://picsum.photos/id/238/200" width="100%">
           <img src="https://picsum.photos/id/297/200" width="100%">
         </div>
@@ -27,11 +27,11 @@
             <div class="container">
 
               <div class="row">
-                <nav class="nav nav-fill" style="background-color: #D7A4C1;">
-                  <a class="nav-link bg-secondary text-light active" href="index.html">Home</a>
-                  <a class="nav-link text-dark" href="flavours.html">Flavours</a>
-                  <a class="nav-link text-dark" href="contact.html">Contact</a>
-                  </nav>
+                <nav class="nav nav-fill customnav">
+                  <a class="nav-link bg-secondary text-light active customnavlink" href="index.html">Home</a>
+                  <a class="nav-link text-dark customnavlink" href="flavours.html">Flavours</a>
+                  <a class="nav-link text-dark customnavlink" href="contact.html">Contact</a>
+                </nav>
               </div>
 
               <div class="row text-center pt-2">
@@ -39,19 +39,25 @@
               </div>
 
               <div class="row">
+
                 <div class="col text-center">
-                  <a class="text-dark" href="#"> <img src="images/blue-ice.png" width="75px"><br>HOME
+                  <a class="text-dark" href="#"> 
+                    <img class="mw-100" src="images/icons/blue.png"><br>HOME
                   </a>
                 </div>
-                <div class="col text-center"><a class="text-dark" href="#"> 
-                  <img src="images/swirl-ice.png" width="75px"><br>FLAVOURS
+
+                <div class="col text-center">
+                  <a class="text-dark" href="#"> 
+                    <img class="mw-100" src="images/icons/swirl.png"><br>FLAVOURS
                   </a>
                 </div>
+                
                 <div class="col text-center">
                 <a class="text-dark" href="#"> 
-                  <img src="images/test1.png" width="75px"><br>CONTACT
+                  <img class="mw-100" src="images/icons/pink.png"><br>CONTACT
                 </a>
                 </div>
+
               </div>
             </div>
 
@@ -63,21 +69,17 @@
               <div class="row text-center"><b>FLAVOURS</b></div>
                       <div class="row">
 
-                        <div class="col"><a href="flavours.html#blue"><img src="images/sml-blue-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#lime"><img src="images/sml-lime-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#ltpink"><img src="images/sml-ltpink-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#peach"><img src="images/sml-peach-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#pink"><img src="images/sml-pink-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#purple"><img src="images/sml-purple-ice.png"></a></div>
-                        <div class="col"><a href="flavours.html#yellow"><img src="images/sml-yellow-ice.png"></a></div>
+                        <div class="col"><a href="flavours.html#blue"><img class="mw-100" width="100px" src="images/icons/sml-blue.png"></a></div>
+                        <div class="col"><a href="flavours.html#lime"><img class="mw-100" width="100px" src="images/icons/sml-lime.png"></a></div>
+                        <div class="col"><a href="flavours.html#ltpink"><img class="mw-100" width="100px" src="images/icons/sml-lt-pink.png"></a></div>
+                        <div class="col"><a href="flavours.html#peach"><img class="mw-100" width="100px" src="images/icons/sml-peach.png"></a></div>
+                        
                       </div>
                     </div>
             </div>
 
           </div>
         </div>
-
-
 
 
 
@@ -90,6 +92,13 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
   
   crossorigin="anonymous"></script>
+
+
+  <script>
+    $('.carousel').carousel({
+      interval: 2000
+    })
+    </script>
 </body>
 </html>
 
