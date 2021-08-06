@@ -1,12 +1,40 @@
 body {
+    font-family: "American Typewriter", sans-serif;
+}
+
+.body-home {
     background-image:url("../images/bg-01.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: #9954b6;
 }
 
-.customnav {
-    background-color: #D7A4C1;
+.body-flavours {
+    background-image:url("../images/bg-01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #9954b6;
+}
+
+.body-contact {
+    background-image:url("../images/bg-01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #9954b6;
+}
+
+.bg-custom {
+    
+    background-color: rgba(215, 164, 193, 0.5);
+}
+
+.card {
+
+    background-color: rgba(215, 164, 193, 0.5);
+}
+
+.tagline {
+    background-color: rgba(215, 164, 193, 0.5);
 }
 
 .customnavlink:active {
@@ -16,6 +44,8 @@ body {
 
 }
 
+
+/* Contact form stuff */
 .contact-form .form-control{
     border-radius:1rem;
 }
