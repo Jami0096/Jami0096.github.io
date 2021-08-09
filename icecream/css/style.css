@@ -36,6 +36,7 @@ body {
 
 .tagline {
     background-color: rgba(215, 164, 193, 0.5);
+    align-content: space-around;
 }
 
 .customnavlink:active {
